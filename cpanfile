@@ -1,2 +1,1 @@
-requires 'Data::Printer';
-requires 'feature';
+requires 'App::revealup', '==0.19';
