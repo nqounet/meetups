@@ -6,8 +6,11 @@ use App::scan_prereqs_cpanfile;
 desc 'run mail.pl';
 task run => sub {
     _carton_install();
-    # sh q{carton exec -- revealup serve talks/20150808-kansai-tiny-pm.md --theme talks/sky-base.css --transition linear};
-    sh q{carton exec -- revealup serve talks/20150827-mystar-labo.md --theme talks/sky-base.css --transition linear};
+    sh
+      q{carton exec -- revealup serve talks/20150910-yonabe-perl.md --theme talks/sky-base.css --transition zoom};
+
+# sh q{carton exec -- revealup serve talks/20150827-mystar-labo.md --theme talks/sky-base.css --transition linear};
+# sh q{carton exec -- revealup serve talks/20150808-kansai-tiny-pm.md --theme talks/sky-base.css --transition linear};
 };
 
 desc 'install perl modules';
