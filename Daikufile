@@ -4,6 +4,11 @@ use App::scan_prereqs_cpanfile;
 
 
 namespace 'slide' => sub {
+    desc 'slide 20160218-yonabe-perl';
+    task 4 => sub {
+        sh
+          q{carton exec -- revealup serve talks/20160218-yonabe-perl.md --theme talks/sky-base.css --transition zoom};
+    };
     desc 'slide 20150910-yonabe-perl';
     task 3 => sub {
         sh
