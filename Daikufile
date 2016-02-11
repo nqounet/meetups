@@ -3,14 +3,22 @@ use Capture::Tiny qw(capture);
 use App::scan_prereqs_cpanfile;
 
 
-desc 'run mail.pl';
-task run => sub {
-    _carton_install();
-    sh
-      q{carton exec -- revealup serve talks/20150910-yonabe-perl.md --theme talks/sky-base.css --transition zoom};
-
-# sh q{carton exec -- revealup serve talks/20150827-mystar-labo.md --theme talks/sky-base.css --transition linear};
-# sh q{carton exec -- revealup serve talks/20150808-kansai-tiny-pm.md --theme talks/sky-base.css --transition linear};
+namespace 'slide' => sub {
+    desc 'slide 20150910-yonabe-perl';
+    task 3 => sub {
+        sh
+          q{carton exec -- revealup serve talks/20150910-yonabe-perl.md --theme talks/sky-base.css --transition zoom};
+    };
+    desc 'slide 20150827-mystar-labo';
+    task 2 => sub {
+        sh
+          q{carton exec -- revealup serve talks/20150827-mystar-labo.md --theme talks/sky-base.css --transition linear};
+    };
+    desc 'slide 20150808-kansai-tiny-pm';
+    task 1 => sub {
+        sh
+          q{carton exec -- revealup serve talks/20150808-kansai-tiny-pm.md --theme talks/sky-base.css --transition linear};
+    };
 };
 
 desc 'install perl modules';
