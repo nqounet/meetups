@@ -10,7 +10,7 @@ my $app = MyApp->new;
 p $app->foo;
 p $app;
 
-$app->foo('bar');
+p $app->foo('bar');
 p $app->foo;
 p $app;
 
