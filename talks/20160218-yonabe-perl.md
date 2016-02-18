@@ -18,6 +18,29 @@
 
 # Why not use Moo?
 
+___
+
+###### define
+
+```
+package MyApp;
+use Moo;
+has foo => (is => 'rw');
+1;
+```
+
+___
+
+###### use
+
+```
+use MyApp;
+
+my $app = MyApp->new;
+$app->foo('bar');
+print $app->foo;
+```
+
 ---
 
 # Enjoy Coding
