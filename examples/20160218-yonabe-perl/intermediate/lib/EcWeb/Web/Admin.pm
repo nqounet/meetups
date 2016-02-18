@@ -7,6 +7,7 @@ with qw(
   EcWeb::Role::Executable
 );
 use EcWeb::Model::Admin;
+use namespace::clean;
 
 has [qw(id name)] => (is => 'rw');
 

@@ -4,6 +4,7 @@ use Moo::Role;
 with qw(
   EcWeb::Role::HasApp
 );
+use namespace::clean;
 
 requires qw(name);
 

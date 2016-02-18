@@ -4,6 +4,8 @@ use Moo;
 with qw(
   EcWeb::Role::AsModel
 );
+use namespace::clean;
+
 
 sub name {'user'}
 

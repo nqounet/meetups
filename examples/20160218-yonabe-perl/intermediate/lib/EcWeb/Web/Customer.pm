@@ -7,6 +7,7 @@ with qw(
   EcWeb::Role::Executable
 );
 use EcWeb::Model::Customer;
+use namespace::clean;
 
 
 sub _build_path {'user'}

@@ -7,10 +7,10 @@ use Data::Printer {deparse => 1};
 
 
 my $app = EcWeb->new;
-# p $app;
+p $app;
 
 my $route = $app->dispatch(@ARGV);
-# p $route;
+p $route;
 
 my $result = $route->execute;
 p $result;

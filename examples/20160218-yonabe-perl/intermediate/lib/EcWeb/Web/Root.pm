@@ -6,6 +6,9 @@ with qw(
   EcWeb::Role::HasApp
   EcWeb::Role::Executable
 );
+use Encode;
+use namespace::clean;
+
 
 has model => (is => 'rw');
 

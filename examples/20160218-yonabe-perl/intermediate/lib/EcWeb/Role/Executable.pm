@@ -1,6 +1,8 @@
 package EcWeb::Role::Executable;
 use utf8;
 use Moo::Role;
+use namespace::clean;
+
 
 requires qw(show);
 

@@ -3,6 +3,8 @@ use utf8;
 use Moo::Role;
 
 use Data::Printer {deparse => 1};
+use namespace::clean;
+
 
 has app => (
     is       => 'ro',
@@ -11,6 +13,9 @@ has app => (
     isa      => sub {
         my $app = shift;
         die '`app` must be `EcWeb` instance' unless ref $app eq 'EcWeb';
+    },
+    trigger => sub {
+        
     },
 );
 
