@@ -29,6 +29,7 @@ ___
 # [@tomcha_](https://twitter.com/tomcha_)
 ___
 - [なにわPerl](https://naniwaperl.doorkeeper.jp/)
+
 ___
 # [@nqounet](https://twitter.com/nqounet)
 ___
@@ -36,6 +37,7 @@ ___
 - [すいもく会](https://suimoku-kai.doorkeeper.jp/)
 - [Kansai Perl Mongers (Kansai.pm)](https://kansai-perl-mongers.doorkeeper.jp/)
 - [Kansai::Tiny.pm](https://kansai-tiny.doorkeeper.jp/)
+
 ---
 # 会場について
 ___
@@ -51,5 +53,19 @@ ___
 ___
 # ハッシュタグ
 - \#kansaipm
+
+---
+# アンケート結果
+___
+## 要旨
+- Perlがどんな場面で用いられるのか
+- Perlのどんな部分が面白いのか
+- Perlが現役で活躍しているところ
+- 昔からある便利なモジュール
+- Perl界隈の最新情報やトレンド
+- どんなエンジニア生活をしているのか
+
+---
+# 懇親会
 ---
 ## お楽しみください！
