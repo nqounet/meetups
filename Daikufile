@@ -4,6 +4,11 @@ use App::scan_prereqs_cpanfile;
 
 
 namespace 'slide' => sub {
+    desc 'slide 20160320-kansai-pm-opening';
+    task 5 => sub {
+        sh
+          q{carton exec -- revealup serve talks/20160320-kansai-pm-opening.md --theme night.css --transition none --width 800 --height 450};
+    };
     desc 'slide 20160218-yonabe-perl';
     task 4 => sub {
         sh
@@ -41,3 +46,23 @@ sub _carton_install {
 }
 
 task default => sub { sh q{daiku -T} };
+__END__
+=head3 C<--theme>
+
+CSS file name or original CSS file path. C<reveal.js> default CSS filenames are below.
+
+    beige.css / blood.css / default.css / moon.css / night.css / serif.css / simple.css / sky.css / solarized.css
+
+=head3 C<--transition>
+
+Trasition effects for slides.
+
+    default / cube / page / concave / zoom / linear / fade / none
+
+=head3 C<--width>
+
+Width of a slide's size. Default is 960.
+
+=head3 C<--height>
+
+Height of a slide's size. Default is 700.
