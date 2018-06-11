@@ -4,6 +4,11 @@ use App::scan_prereqs_cpanfile;
 
 
 namespace 'slide' => sub {
+    desc 'slide 20180609-camp';
+    task 8 => sub {
+        sh
+          q{carton exec -- revealup serve talks/20180609-camp.md --theme talks/sky-base.css --transition cube --width 1080};
+    };
     desc 'slide 20170911-camp';
     task 7 => sub {
         sh
